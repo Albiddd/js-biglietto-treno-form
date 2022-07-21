@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #B91450;
+}
+section h2{
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 1rem;
+}
+
+/* SEZIONE CALCOLO */
+.container{
+    background-color: white;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px 0px rgb(68, 67, 67);
+}
+.row{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+.col-calc{
+    padding: 1.2rem 0;
+}
+.col-calc h4{
+    padding: 10px 0;
+    text-align: center;
+    color: #B91450;
+    font-size: 1.1rem;
+}
+
+.input{
+    border: 1.8px solid #B91450;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.buttons{
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.button{
+    color: white;
+    font-weight: 600;
+    background-color: rgba(185, 20, 80, 0.8);
+    border-radius: 5px;
+    border: 2px solid #b91450;
+    padding: 0.4rem 0.5rem; 
+    margin: 0 0.5rem;   
+}
+
+#row-biglietto{
+    display: none;
+    justify-content: space-around;
+}

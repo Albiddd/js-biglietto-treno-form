@@ -15,32 +15,52 @@
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <!-- <h4>Nome e Cognome</h4>
-                        <input type="text" name="nome" placeholder="Nome"> -->
+                    <div class="col-calc">
+                        <h4>Nome e Cognome</h4>
+                        <input class="input" type="text" name="nome" placeholder="Nome">
                     </div>
-                    <div class="col">
+                    <div class="col-calc">
                         <h4>Km da percorrere</h4>
-                        <input type="text" name="km" placeholder="Km">
+                        <input class="input" type="text" name="km" placeholder="Km">
                     </div>
-                    <div class="col">
+                    <div class="col-calc">
                         <h4>Fascia d'età</h4>
-                        <!-- <select name="eta" id="eta">
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="minorenne">Minorenne</option>
-                            <option value="over">Over 65</option>
-                        </select> -->
-                        <input type="text" name="eta" placeholder="Età">
+                        <select class="input" name="eta" id="eta">
+                            <option value="18">Maggiorenne</option>
+                            <option value="15">Minorenne</option>
+                            <option value="65">Over 65</option>
+                        </select>
                     </div>
                 </div>
-                <input type="submit" value="Genera">
+                <div class="buttons">
+                    <input class="button" type="submit" value="Genera">
+                    <input class="button" type="button" value="Annulla">
+                </div>
             </div>
         </section>
 
         <section>
             <h2>IL TUO BIGLIETTO</h2>
             <div class="container">
-                <!-- <h3>DETTAGLIO PASSEGGERO</h3> -->
+                <h3>DETTAGLIO PASSEGGERO</h3>
+                <div id="row-biglietto">
+                    <div class="col col-pass">
+                        <h4>NOME PASSEGGERO</h4>
+                        <span id="passeggero"></span>
+                    </div>
+                    <div class="col">
+                        <h4>Offerta</h4>
+                        <span id="offerta"></span>
+                    </div>
+                    <div class="col">
+                        <h4>Carrozza</h4>
+                        <span id="carrozza"></span>
+                    </div>
+                    <div class="col">
+                        <h4>Costo Biglietto</h4>
+                        <span id="costo"></span>
+                    </div>
+                </div>
                 <h5 id="biglietto"></h5>
             </div>
         </section>
