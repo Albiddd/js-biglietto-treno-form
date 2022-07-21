@@ -11,10 +11,13 @@ buttonElement.addEventListener('click', function(){
     const carrozza = document.getElementById('carrozza');
     const costo = document.getElementById('costo');
 
-    passeggero.innerHTML = nome
+    
+
     const biglietto = document.getElementById('row-biglietto');
     biglietto.style.display = 'flex'
 
+    passeggero.innerHTML = nome;
+    carrozza.innerHTML = Math.round(Math.random() * 10);
 
    if (eta < 18){
         let percentualeSconto = 0.2;
@@ -22,7 +25,7 @@ buttonElement.addEventListener('click', function(){
         let prezzoScontato = prezzo - sconto;
         prezzoScontato = prezzoScontato.toFixed(2);
         costo.innerHTML = prezzoScontato + '&euro;';
-
+        offerta.innerHTML = 'Biglietto Ridotto';
     }
     else if (eta >= 65){
         let percentualeSconto = 0.4;
@@ -30,12 +33,14 @@ buttonElement.addEventListener('click', function(){
         let prezzoScontato = prezzo - sconto;
         prezzoScontato = prezzoScontato.toFixed(2);
         costo.innerHTML = prezzoScontato + '&euro;';
+        offerta.innerHTML = 'Biglietto Over65';
     }
     else{
         const sconto = prezzo * percentualeSconto;
         let prezzoScontato = prezzo - sconto;
         prezzoScontato = prezzoScontato.toFixed(2);
-        costo.innerHTML = prezzo + '&euro;';;
+        costo.innerHTML = prezzo + '&euro;';
+        offerta.innerHTML = 'Biglietto Standard';
         
     }
 } )

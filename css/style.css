@@ -24,6 +24,7 @@ section h2{
     max-width: 1000px;
     margin: 0 auto;
     box-shadow: 0px 0px 8px 0px rgb(68, 67, 67);
+    padding: 20px;
 }
 .row{
     display: flex;
@@ -31,7 +32,7 @@ section h2{
     justify-content: center;
 }
 .col-calc{
-    padding: 1.2rem 0;
+    padding: 1rem 0;
 }
 .col-calc h4{
     padding: 10px 0;
@@ -62,5 +63,17 @@ section h2{
 
 #row-biglietto{
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 2px solid #b2b2b2;
+}
+.container h3{
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+}
+.col{
+    padding: 20px 30px;
+}
+.col-pass{
+    background-color: #b2b2b2;
+    font-weight: 700;
 }
